@@ -1,1 +1,1 @@
-# new-site
+# New site template
