@@ -1,0 +1,241 @@
+/* main resets */
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+html {
+  font-size: 100%;
+  font-size: 22px; }
+
+body {
+  font: normal 22px, Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, figure,
+blockquote, details, hr,
+fieldset, pre, table {
+  margin: 0 0 1.5rem; }
+
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta, .gamma, .delta, .epslion, .zeta {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+h1,
+.alpha {
+  font-size: 1.9224rem; }
+
+h2,
+.beta {
+  font-size: 1.7088rem; }
+
+h3,
+.gamma {
+  font-size: 1.5192rem; }
+
+h4,
+.delta {
+  font-size: 1.35rem; }
+  h4.subheading,
+  .delta.subheading {
+    font-style: italic;
+    font-family: "Merriweather", serif; }
+
+h5,
+.epslion {
+  font-size: 1.2rem; }
+
+h6,
+.zeta {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.64px;
+  font-weight: bold; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5; }
+  p a {
+    vertical-align: bottom; }
+
+a {
+  color: #EBA841;
+  text-decoration: none;
+  line-height: 1.5; }
+
+blockquote {
+  color: #39393d;
+  border-left: 3px solid #2C82C9;
+  padding: 15px;
+  margin-left: 15px;
+  font-style: italic; }
+
+/*
+--------------------------------------------------
+:: Mobile Styling
+--------------------------------------------------
+*/
+.js nav[role=navigation] {
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+  text-align: center; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #2D2D30; }
+  header h1 {
+    margin: 0;
+    padding: 5% 10px;
+    font-size: 110%; }
+    header h1 a {
+      text-decoration: none; }
+  header .menu-link {
+    float: right;
+    display: block;
+    padding: .5em;
+    padding-right: 10px; }
+  header nav {
+    clear: both;
+    transition: all 0.3s ease-out;
+    background-color: #333337; }
+    header nav a {
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #39393d;
+      text-decoration: none;
+      color: #FAFAFA;
+      transition: 0.15s, ease; }
+      header nav a:last-child {
+        border-bottom: 0; }
+      header nav a:active {
+        background-color: #EBA841;
+        color: #2D2D30; }
+    header nav.active {
+      max-height: 20em !important; }
+
+/*
+--------------------------------------------------
+:: Tablet Styling
+--------------------------------------------------
+*/
+@media screen and (min-width: 48em) {
+  .js nav[role=navigation] {
+    overflow: visible;
+    max-height: inherit;
+    width: 100%; }
+  header {
+    justify-content: center; }
+    header .menu-link {
+      display: none; }
+    header nav {
+      display: flex;
+      justify-content: center; }
+      header nav a {
+        display: inline-block;
+        border-bottom: 0;
+        color: #EBA841; }
+      header nav .active {
+        padding: 0 40px; } }
+
+/*
+--------------------------------------------------
+:: Desktop Styling
+--------------------------------------------------
+*/
+@media screen and (min-width: 64em) {
+  .js nav[role=navigation] {
+    width: auto; }
+  header {
+    justify-content: space-around;
+    padding: 1% 0; }
+    header h1 {
+      padding: 2% 0; }
+    header nav {
+      background-color: transparent; } }
+
+.fake-banner div:first-child {
+  background-color: #83D6DE;
+  min-height: 300px;
+  width: 100%; }
+
+.fake-banner div:nth-child(2) {
+  background-color: #2C82C9;
+  min-height: 300px;
+  width: 100%; }
+
+.fake-banner div:nth-child(3) {
+  background-color: #EBA841;
+  min-height: 300px;
+  width: 100%; }
+
+.fake-banner div:nth-child(4) {
+  background-color: #2D2D30;
+  min-height: 300px;
+  width: 100%; }
+
+/*
+--------------------------------------------------
+:: Mobile Styling
+--------------------------------------------------
+*/
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.cards {
+  padding: 3%;
+  background-color: #626263; }
+
+.card {
+  width: 100%;
+  margin: 15px;
+  padding: 25px;
+  background-color: #383732;
+  border-bottom: 10px solid #47C9AF; }
+  .card img {
+    margin: 0 auto;
+    display: block; }
+  .card-headline, .card-content {
+    color: red; }
+
+/*
+--------------------------------------------------
+:: Tablet Styling
+--------------------------------------------------
+*/
+/*
+--------------------------------------------------
+:: Desktop Styling
+--------------------------------------------------
+*/
+@media screen and (min-width: 64em) {
+  .content {
+    flex-wrap: nowrap; }
+  .card {
+    width: 33%; } }

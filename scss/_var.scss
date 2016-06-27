@@ -1,0 +1,36 @@
+// color palette
+$color-primary: #2C82C9;
+$color-secondary: #83D6DE;
+$color-light: #FAFAFA;
+$color-dark: #2D2D30;
+$color-xdark: #171719;
+
+$color-accent: #EBA841;
+
+$base-body-color: #7f8c8d;
+
+// fonts
+$base-font-serif: 'Merriweather', serif;;
+$base-font-sans-serif: 'Open Sans', sans-serif;
+
+// font sizes
+$base-font-size-lg: 22px;
+$base-font-size-sm: 16px;
+
+$base-scale: 1.2;
+$base-line-height: 1.5;
+$base-font-weight-bold: bold;
+$base-font-weight: 400;
+$base-letter-spacing: ($base-font-size-lg * $base-scale * .10);
+
+// heading sizes
+$base-h1: ($base-font-size-lg * $base-scale * 1.602);
+$base-h2: ($base-font-size-lg * $base-scale * 1.424);
+$base-h3: ($base-font-size-lg * $base-scale * 1.266);
+$base-h4: ($base-font-size-lg * $base-scale * 1.125);
+$base-h5: ($base-font-size-lg * $base-scale * 1);
+$base-h6:  $base-font-size-lg;
+
+$base-p: ($base-font-size-lg * 1);
+
+$base-heading-font: $base-font-sans-serif;

@@ -1,0 +1,79 @@
+@import "_var";
+@import "helpers/_mixins";
+
+html {
+  font-size: 100%;
+  font-size: $base-font-size-lg;
+}
+
+body {
+  font: normal 22px, Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, figure,
+blockquote, details, hr,
+fieldset, pre, table {
+  margin: 0 0 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta, .gamma, .delta, .epslion, .zeta {
+  font-family: $base-heading-font;
+  font-weight: $base-font-weight;
+}
+
+h1,
+.alpha {
+  font-size: ($base-h1 / $base-font-size-lg) + rem;
+}
+h2,
+.beta {
+  font-size: ($base-h2 / $base-font-size-lg) + rem;
+}
+h3,
+.gamma {
+  font-size: ($base-h3 / $base-font-size-lg) + rem;
+}
+h4,
+.delta {
+  font-size: ($base-h4 / $base-font-size-lg) + rem;
+  &.subheading {
+    font-style: italic;
+    font-family: $base-font-serif ;
+  }
+}
+h5,
+.epslion {
+  font-size: ($base-h5 / $base-font-size-lg) + rem;
+}
+h6,
+.zeta {
+  font-size: ($base-h6 / $base-font-size-lg) + rem;
+  text-transform: uppercase;
+  letter-spacing: $base-letter-spacing;
+  font-weight: $base-font-weight-bold;
+}
+p {
+  font-size: ($base-p / $base-p) + rem;
+  line-height: $base-line-height;
+  a {
+    vertical-align: bottom;
+  }
+}
+a {
+  color: $color-accent;
+  text-decoration: none;
+  line-height: $base-line-height;
+  // @include overline-center;
+}
+
+blockquote {
+  color: lighten($color-dark, 5%);
+  border-left: 3px solid $color-primary;
+  padding: 15px;
+  margin-left: 15px;
+  font-style: italic;
+}
